@@ -1,2 +1,6 @@
-# premier_league_analysis
-A repo that creates auto data flow that brings valuable insights from semi-structured premier league games dataset
+# App Data (JSON) Analysis Tool
+
+## Motivation
+Motivation for creating this repo is to create a python class that has methods which can bring insights from semi-structured dataset gathered from an sports app.
+
+
