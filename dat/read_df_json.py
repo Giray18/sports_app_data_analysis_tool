@@ -21,6 +21,14 @@ def read_df_json(path = []):
             df = df.transpose()
         else:
             df
+        game_ids = df.index.to_list()
+        for col in df.columns:
+            if df[col].dtype == "object":
+                try:
+                    df[col] = [i.lower() for i in df[col]]
+                except AttributeError:
+                    for c in game_ids:
+                        df[col][c] =  [v.lower() for v in df[col][c]]
     return df
 
 if __name__ == '__main__':
