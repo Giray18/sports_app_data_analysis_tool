@@ -13,7 +13,6 @@ def read_df_json(path = []):
     json_files = glob.glob(os.path.join(path, "*.json"))
     # loop over the list of csv files
     for f in json_files:
-        print(f)
         # global df
         # read the json files
         df = pd.read_json(f)
@@ -22,11 +21,14 @@ def read_df_json(path = []):
         else:
             df
         game_ids = df.index.to_list()
+        col_with_json_val = [df[i].name for i in df.columns if "{" in str(df[i].iloc[0]) and ":" in str(df[i].iloc[0])]
         for col in df.columns:
-            if df[col].dtype == "object":
+            if df[col].dtype == "object" and df[col].name not in col_with_json_val:
                 try:
+                    # df[col] = [i.replace("{", "[").replace("}", "]") for i in df[col]]
                     df[col] = [i.lower() for i in df[col]]
                 except AttributeError:
+                    pass
                     for c in game_ids:
                         df[col][c] =  [v.lower() for v in df[col][c]]
     return df
