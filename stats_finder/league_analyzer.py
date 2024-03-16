@@ -110,6 +110,7 @@ class goal_analyzer:
         return percentage
 
 class line_ups(goal_analyzer):
+    
     ''' Class to get line up performance of a player'''
     def __init__(self, df, team,player):
         super().__init__(df, team)
@@ -123,6 +124,18 @@ class line_ups(goal_analyzer):
         away_game_starts = sum([i.count(self.player) for i in away_game_starts])
         total_line_ups = home_game_starts + away_game_starts
         return total_line_ups
+
+    def top_10_lineupers(self):
+        game_ids = self.df.index.to_list()
+        home_game_starts = [self.df["team1_startings"][game_id] for game_id in game_ids]
+        away_game_starts = [self.df["team2_startings"][game_id] for game_id in game_ids]
+        home_game_starts.extend(away_game_starts)
+        d = defaultdict(int)
+        for starts in home_game_starts:
+            for i in starts:
+                d[i] += 1
+        d = sorted(d.items(), key=lambda item: item[1], reverse=True)[:10]
+        return d
 
 
 
