@@ -25,12 +25,13 @@ def read_df_json(path = []):
         for col in df.columns:
             if df[col].dtype == "object" and df[col].name not in col_with_json_val:
                 try:
-                    # df[col] = [i.replace("{", "[").replace("}", "]") for i in df[col]]
                     df[col] = [i.lower() for i in df[col]]
+                    df[col] = [i.replace('&', "and") for i in df[col]]
                 except AttributeError:
-                    pass
+                    # pass
                     for c in game_ids:
                         df[col][c] =  [v.lower() for v in df[col][c]]
+                        df[col][c] =  [v.replace('&', "and") for v in df[col][c]]
     return df
 
 if __name__ == '__main__':
