@@ -8,6 +8,8 @@ A BI team who is looking for to gather quick insights from a semi structured dat
 Used dataset covering 19 weeks of 2022-2023 Premier league season
 
 ### Source Dataset Definition (RAW)
+Source data located on (https://raw.githubusercontent.com/Giray18/sports_app_data_analysis_tool/main/epl_2022_2023_07_02_2023.json)
+
 ![picture alt](screenshot_dataset.PNG)
 ### Source Dataset Definition Flattened Dataframe
 ![picture alt](dataset_flattened.PNG)
