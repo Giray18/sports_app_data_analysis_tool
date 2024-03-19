@@ -35,7 +35,7 @@ Used dataset covering 19 weeks of 2022-2023 Premier league season
 
 ## Task Executed (Target Situation)
 For to get needed insights from source data 2 python class and 1 python module created and used.<br>
-Two class called goal analyzer and lineups located in stats finder module (https://github.com/Giray18/sports_app_data_analysis_tool/tree/main/stats_finder) created and used.<br>
+Two class called goal analyzer and lineups located in stats finder module (https://github.com/Giray18/sports_app_data_analysis_tool/tree/main/stats_finder) created and used.
 1 function (read_df_json) from python module (dat) located on https://github.com/Giray18/sports_app_data_analysis_tool/tree/main/dat used to read JSON data into flattened pandas dataframe structure.<br>
 Usage examples of classes can be found on jupyter notebook located on (https://github.com/Giray18/sports_app_data_analysis_tool/blob/main/playground.ipynb)<br>
 <br>
