@@ -13,6 +13,17 @@ Used dataset covering 19 weeks of 2022-2023 Premier league season
 ![picture alt](dataset_flattened.PNG)
 
 * Columns of Flattened Dataframe
+  * Index Col: Game Id
+  * event: All actions taken in a game stored in a list
+  * matchweek : matchweek of season
+  * team1_name : home team name
+  * team1_startings : starting lineup of home team saved in a list
+  * team1_subs : subs of home team saved in a list
+  * team1_stats : home team general stats on game e.g possesion, shots on target etc.
+  * team2_name : away team name
+  * team2_startings : starting lineup of away team saved in a list
+  * team2_subs : subs of away team saved in a list
+  * team2_stats : away team general stats on game e.g possesion, shots on target etc.
 
 ### Needed Insights
 - A method that brings team name as parameter and returns amount of goals that selected team scored
