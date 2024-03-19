@@ -8,9 +8,9 @@ A BI team who is looking for to gather quick insights from a semi structured dat
 Used dataset covering 19 weeks of 2022-2023 Premier league season
 
 ### Source Dataset Definition (RAW)
-![picture alt](screenshot_dataset.png)
+![picture alt](screenshot_dataset.PNG)
 ### Source Dataset Definition Flattened Dataframe
-![picture alt](dataset_flattened.png)
+![picture alt](dataset_flattened.PNG)
 
 
 ### Needed Insights
