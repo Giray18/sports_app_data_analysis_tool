@@ -12,6 +12,7 @@ Used dataset covering 19 weeks of 2022-2023 Premier league season
 ### Source Dataset Definition Flattened Dataframe
 ![picture alt](dataset_flattened.PNG)
 
+* Columns of Flattened Dataframe
 
 ### Needed Insights
 - A method that brings team name as parameter and returns amount of goals that selected team scored
