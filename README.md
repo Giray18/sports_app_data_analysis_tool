@@ -7,6 +7,12 @@ Motivation for creating this repo is to create a python class that has methods w
 A BI team who is looking for to gather quick insights from a semi structured data applying to a data analyst for a tool creation to gather needed insight quickly.
 Used dataset covering 19 weeks of 2022-2023 Premier league season
 
+### Source Dataset Definition (RAW)
+![picture alt](screenshot_dataset.png)
+### Source Dataset Definition Flattened Dataframe
+![picture alt](dataset_flattened.png)
+
+
 ### Needed Insights
 - A method that brings team name as parameter and returns amount of goals that selected team scored
 - Percentage of total goals in league of selected team
